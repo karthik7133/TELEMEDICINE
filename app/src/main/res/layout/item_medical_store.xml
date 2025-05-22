@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradientbtn2"
+        android:padding="10dp">
+
+        <!-- Store Name -->
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medical Store Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="#FFFDD0"/>
+
+        <!-- Store Address -->
+        <TextView
+            android:id="@+id/storeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Store Address"
+            android:textSize="14sp"
+            android:textColor="#FFFDD0"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Call Button -->
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="call"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:backgroundTint="@color/paleblue2"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

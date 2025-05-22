@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background7"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Community-Based Diagnosis"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFDD0"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/userQueryInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFDD0"
+        android:textColor="#FFFDD0"
+        android:hint="Describe your symptoms or ask a question"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/submitQueryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+        android:background="@drawable/gradientbtn2"
+        android:text="Ask Community"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/communityResponseList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

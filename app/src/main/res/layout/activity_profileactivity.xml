@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg11"
+    tools:context=".profileactivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Profile"
+        android:textColor="#FFFDD0"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Doctor Profile -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/gradientbtn2"
+        android:padding="20dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/doctorProfile"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/doctor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor"
+            android:textColor="#FFFDD0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <!-- Patient Profile -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/gradientbtn2"
+        android:padding="20dp"
+        android:id="@+id/patientProfile"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/patient"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient"
+            android:textColor="#FFFDD0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
